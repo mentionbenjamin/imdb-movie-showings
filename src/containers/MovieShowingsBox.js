@@ -1,4 +1,5 @@
 import React from 'react';
+import MovieList from '../components/MovieList.js';
 
 
 class MovieShowingsBox extends React.Component {
@@ -7,20 +8,18 @@ class MovieShowingsBox extends React.Component {
     super(props);
     this.state = {
       movie: [
-        {title: 'Matilda', id: 123},
-        {title: 'Titanic', id: 456},
-        {title: 'Harry Potter', id: 789}
+        {title: 'Matilda', text: 'about a kid', id: 123},
+        {title: 'Titanic', text: 'about a boat', id: 456},
+        {title: 'Harry Potter', text: 'about a wizard', id: 789}
       ]
     };
   }
 
   render() {
     return (
-      'Hello'
+      <div className="movie-showings-box">
+        <MovieList movies={this.state.movies}/>
+      </div>
     );
   }
-
 }
-
-
-export default MovieShowingsBox;
