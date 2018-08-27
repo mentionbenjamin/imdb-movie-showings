@@ -7,11 +7,17 @@ class MovieShowingsBox extends React.Component {
     super(props);
     this.state = {
       movie: [
-        {title: Matilda, id: 123},
-        {title: Titanic, id: 456},
-        {title: Harry Potter, id: 789}
+        {title: 'Matilda', id: 123},
+        {title: 'Titanic', id: 456},
+        {title: 'Harry Potter', id: 789}
       ]
     };
+  }
+
+  render() {
+    return (
+      'Hello'
+    );
   }
 
 }
