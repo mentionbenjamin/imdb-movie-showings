@@ -1,15 +1,19 @@
-import React from 'react.js';
-import Movie from '/Movie.js';
+import React from 'react';
+import Comment from './Movie.js';
 
-class MovieList extends React.Components {
+class MovieList extends React.Component {
   render() {
-    const movieComponents = this.props.movies.map((movie) => {
-      return
-        (<Movie author={movie.title} key={movie.id}>
-          {movie.text}
-        </Movie>);
+    console.log('this.props.movies', this.props.movies);
+
+    const movieComponents = this.props.movies.map((movies) => {
+      return (<MovieList
+        author={movie.author}
+        key={movie.id}
+        >
+          {movie.text}</MovieList>);
     });
 
+    console.log('movieComponents', movieComponents);
     return (
       <ul>
         This is the MovieList
@@ -18,7 +22,5 @@ class MovieList extends React.Components {
     );
   }
 }
-
-
 
 export default MovieList;

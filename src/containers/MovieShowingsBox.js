@@ -23,3 +23,5 @@ class MovieShowingsBox extends React.Component {
     );
   }
 }
+
+export default MovieShowingsBox;

@@ -10,4 +10,4 @@ const Movie = function(props) {
 }
 
 
-export default Comment;
+export default Movie;
